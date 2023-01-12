@@ -2,6 +2,8 @@
 
 int main()
 {
-    std::cout << "Hello world!" << std::endl;
+    int var;
+    std::cin >> var;
+    std::cout << "Hello world! " << std::endl;
     return 0;
 }
