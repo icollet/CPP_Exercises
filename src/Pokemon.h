@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <memory>
 
 // A creature that is cute and can fight other ones.
 class Pokemon
@@ -39,3 +40,5 @@ private:
    std::string _name;
    int         _id;
 };
+
+using PokemonPtr = std::unique_ptr<Pokemon>;
