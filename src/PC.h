@@ -15,6 +15,14 @@ public:
       return _pokemons;
    }
 
+   void transfer(PokemonPtr pokemon)
+   {
+      if (pokemon != nullptr)
+      {
+         _pokemons.push_back(std::move(pokemon));
+      }
+   }
+
 private:
    std::vector<PokemonPtr> _pokemons;
 };
